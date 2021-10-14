@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Oct 14 16:32:30 2021
+# Process ID: 7804
+# Current directory: D:/Project/SketchSystem_Multi1080p_HDMI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6684 D:\Project\SketchSystem_Multi1080p_HDMI\SketchSystem.xpr
+# Log file: D:/Project/SketchSystem_Multi1080p_HDMI/vivado.log
+# Journal file: D:/Project/SketchSystem_Multi1080p_HDMI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/Sketch_IP_1080p'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/SketchSystem_Multi1080p_HDMI/avnet_zed_hdmi_core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 929.605 ; gain = 247.664
+update_compile_order -fileset sources_1
+open_bd_design {D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:user:SketchIP_1080p:1.8 - SketchIP_1080p_0
+Adding cell -- xilinx.com:ip:axis_dwidth_converter:1.1 - axis_dwidth_converter_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /imageProcess/axi_resetn(rst) and /imageProcess/SketchIP_1080p_0/axi_reset_n(undef)
+Adding cell -- avnet:zedboard:zed_hdmi_out:2.0 - zed_hdmi_out_0
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_148M
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:module_ref:c_rsample:1.0 - c_rsample_0
+Adding cell -- xilinx.com:ip:v_rgb2ycrcb:7.1 - v_rgb2ycrcb_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /videoSubSystem/clk(clk) and /videoSubSystem/zed_hdmi_out_0/clk(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1038.625 ; gain = 92.965
+write_project_tcl {D:/Project/SketchSystemScript_HDMI/SketchSystem.tcl}
+INFO: [BD 5-453] Writing out BD creation steps for system as a TCL proc
+INFO: [Vivado-projutils-8] Tcl script 'SketchSystem.tcl' generated in output directory 'D:/Project/SketchSystemScript_HDMI'
+
+INFO: [Vivado-projutils-15] Please note that by default, the file path for the project source files were set with respect to the 'origin_dir' variable in the
+ generated script. When this script is executed from the output directory, these source files will be referenced with respect to this 'origin_dir' path value.
+ In case this script was later moved to a different directory, the 'origin_dir' value must be set manually in the script with the path
+ relative to the new output directory to make sure that the source files are referenced correctly from the original project. You can also set the
+ 'origin_dir' automatically by setting the 'origin_dir_loc' variable in the tcl shell before sourcing this generated script. The 'origin_dir_loc'
+ variable should be set to the path relative to the new output directory. Alternatively, if you are sourcing the script from the Vivado command line,
+ then set the origin dir using '-tclargs --origin_dir <path>'. For example, 'vivado -mode tcl -source SketchSystem.tcl -tclargs --origin_dir ".."
+
+WARNING: [Vivado-projutils-10] Found source(s) that were local or imported into the project. If this project is being source controlled, then
+ please ensure that the project source(s) are also part of this source controlled data. The list of these local source(s) can be found in the generated script
+ under the header section.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 14 16:56:47 2021...

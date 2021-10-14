@@ -1,0 +1,483 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Sep 25 18:24:09 2021
+# Process ID: 4148
+# Current directory: D:/Project/SketchSystem_Multi1080p_HDMI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13324 D:\Project\SketchSystem_Multi1080p_HDMI\SketchSystem.xpr
+# Log file: D:/Project/SketchSystem_Multi1080p_HDMI/vivado.log
+# Journal file: D:/Project/SketchSystem_Multi1080p_HDMI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.xpr
+INFO: [Project 1-313] Project file moved from 'D:/GitCode/SketchSystem_Multi1080p' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/Sketch_IP_1080p'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_SketchIP_1080p_0_1
+
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 919.844 ; gain = 243.340
+update_compile_order -fileset sources_1
+update_module_reference system_mux_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/Sketch_IP_1080p'.
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axis_dwidth_converter:1.1 - axis_dwidth_converter_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:module_ref:mux:1.0 - mux_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_148M
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:user:SketchIP_1080p:1.7 - SketchIP_1080p_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_ps7_0_100M/peripheral_aresetn(rst) and /SketchIP_1080p_0/axi_reset_n(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd>
+Upgrading 'D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_mux_0_0 from mux_v1_0 1.0 to mux_v1_0 1.0
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+upgrade_ip: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1047.457 ; gain = 112.750
+update_module_reference: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1047.457 ; gain = 112.750
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:SketchIP_1080p:1.8 [get_ips  system_SketchIP_1080p_0_1] -log ip_upgrade.log
+Upgrading 'D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_SketchIP_1080p_0_1 from SketchIP_1080p 1.7 to SketchIP_1080p 1.8
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_ps7_0_100M/peripheral_aresetn(rst) and /SketchIP_1080p_0_upgraded_ipi/axi_reset_n(undef)
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Project/SketchSystem_Multi1080p_HDMI/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_SketchIP_1080p_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd> 
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_dwidth_converter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0.hwh
+Generated Block Design Tcl file d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0_bd.tcl
+Generated Hardware Definition File d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/synth/system_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_148M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SketchIP_1080p_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 1504.160 ; gain = 442.473
+catch { config_ip_cache -export [get_ips -all system_SketchIP_1080p_0_1] }
+catch { config_ip_cache -export [get_ips -all system_auto_cc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_cc_0, cache-ID = 497bced554c09a48; cache size = 95.902 MB.
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = b483ac5f30e466e2; cache size = 95.902 MB.
+export_ip_user_files -of_objects [get_files D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 6 {system_mux_0_0_synth_1 system_SketchIP_1080p_0_1_synth_1}
+[Sat Sep 25 18:30:21 2021] Launched system_mux_0_0_synth_1, system_SketchIP_1080p_0_1_synth_1...
+Run output will be captured here:
+system_mux_0_0_synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_mux_0_0_synth_1/runme.log
+system_SketchIP_1080p_0_1_synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_SketchIP_1080p_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd] -directory D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.ip_user_files/sim_scripts -ip_user_files_dir D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.ip_user_files -ipstatic_source_dir D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.cache/compile_simlib/modelsim} {questa=D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.cache/compile_simlib/questa} {riviera=D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.cache/compile_simlib/riviera} {activehdl=D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property  ip_repo_paths  {d:/Project/Sketch_IP_1080p D:/Project/SketchSystem_Multi1080p_HDMI/avnet_zed_hdmi_core} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/Sketch_IP_1080p'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/SketchSystem_Multi1080p_HDMI/avnet_zed_hdmi_core'.
+startgroup
+create_bd_cell -type ip -vlnv avnet:zedboard:zed_hdmi_out:2.0 zed_hdmi_out_0
+endgroup
+set_property location {7 2311 790} [get_bd_cells zed_hdmi_out_0]
+delete_bd_objs [get_bd_nets v_axi4s_vid_out_0_vid_active_video] [get_bd_nets v_axi4s_vid_out_0_vid_data] [get_bd_nets mux_0_o_data] [get_bd_nets xlslice_0_Dout] [get_bd_nets xlslice_1_Dout] [get_bd_nets xlslice_2_Dout] [get_bd_cells mux_0] [get_bd_cells xlslice_0] [get_bd_cells xlslice_1] [get_bd_cells xlslice_2]
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_ports VGA_G]
+delete_bd_objs [get_bd_ports VGA_R]
+delete_bd_objs [get_bd_ports VGA_B]
+delete_bd_objs [get_bd_nets v_axi4s_vid_out_0_vid_hsync]
+delete_bd_objs [get_bd_nets v_axi4s_vid_out_0_vid_vsync]
+delete_bd_objs [get_bd_ports vid_vsync]
+delete_bd_objs [get_bd_ports vid_hsync]
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out] [get_bd_intf_pins zed_hdmi_out_0/VID_IO_IN]
+connect_bd_net [get_bd_pins zed_hdmi_out_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /zed_hdmi_out_0/clk(undef)
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+set_property -dict [list CONFIG.CONST_WIDTH {1} CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins zed_hdmi_out_0/reset]
+connect_bd_net [get_bd_pins zed_hdmi_out_0/audio_spdif] [get_bd_pins xlconstant_1/dout]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins zed_hdmi_out_0/IO_HDMIO]
+endgroup
+set_property name hdmio_o [get_bd_intf_ports IO_HDMIO_0]
+set_property name hdmio_io [get_bd_intf_ports hdmio_o]
+delete_bd_objs [get_bd_intf_nets axi_vdma_0_M_AXIS_MM2S]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_rgb2ycrcb:7.1 v_rgb2ycrcb_0
+endgroup
+set_property location {7 2051 552} [get_bd_cells v_rgb2ycrcb_0]
+connect_bd_net [get_bd_pins v_rgb2ycrcb_0/aclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins v_rgb2ycrcb_0/aclken] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins v_rgb2ycrcb_0/aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+import_files -norecurse D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/new/cresample.v
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference c_rsample c_rsample_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_video' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_video' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'aresetn' as interface 'aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'aclk' as interface 'aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis_video:s_axis_video'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/Sketch_IP_1080p'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project/SketchSystem_Multi1080p_HDMI/avnet_zed_hdmi_core'.
+set_property location {7 2558 606} [get_bd_cells c_rsample_0]
+connect_bd_intf_net [get_bd_intf_pins v_rgb2ycrcb_0/video_out] [get_bd_intf_pins c_rsample_0/s_axis_video]
+connect_bd_net [get_bd_pins c_rsample_0/aclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins c_rsample_0/aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins c_rsample_0/m_axis_video] [get_bd_intf_pins v_axi4s_vid_out_0/video_in]
+startgroup
+set_property -dict [list CONFIG.C_S_AXIS_VIDEO_FORMAT.VALUE_SRC USER] [get_bd_cells v_axi4s_vid_out_0]
+set_property -dict [list CONFIG.C_S_AXIS_VIDEO_FORMAT {0}] [get_bd_cells v_axi4s_vid_out_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_iic:2.0 axi_iic_0
+endgroup
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "/clk_wiz_0/clk_out1 (148 MHz)" Clk_master "/clk_wiz_0/clk_out1 (148 MHz)" Clk_slave "/clk_wiz_0/clk_out1 (148 MHz)" }  [get_bd_intf_pins axi_iic_0/S_AXI]
+INFO: [xilinx.com:ip:processing_system7:5.5-1] /processing_system7_0</processing_system7_0/M_AXI_GP0> already has associated sink clock </processing_system7_0/M_AXI_GP0_ACLK> driven by clock source </processing_system7_0/FCLK_CLK0>. Specified clock </clk_wiz_0/clk_out1> will not be used to connect associated sink clock pin of </ps7_0_axi_periph/S00_AXI> (if not connected already); </processing_system7_0/FCLK_CLK0> will be used instead.
+</axi_iic_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41600000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board  [get_bd_intf_pins axi_iic_0/IIC]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 iic_rtl
+INFO: [board_rule 100-100] connect_bd_intf_net /iic_rtl /axi_iic_0/IIC
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /axi_iic_0/IIC. Users may need to specify the location constraint manually.
+endgroup
+set_property name zed_hdmi_iic [get_bd_intf_ports iic_rtl]
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1344] Reset pin /v_rgb2ycrcb_0/aresetn (associated clock /v_rgb2ycrcb_0/aclk) is connected to reset source /rst_ps7_0_100M/peripheral_aresetn (synchronous to clock source /processing_system7_0/FCLK_CLK0).
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_148M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-1344] Reset pin /c_rsample_0/aresetn (associated clock /c_rsample_0/aclk) is connected to reset source /rst_ps7_0_100M/peripheral_aresetn (synchronous to clock source /processing_system7_0/FCLK_CLK0).
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_148M/peripheral_aresetn.
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/v_rgb2ycrcb_0/s_axis_video_tvalid
+
+validate_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1712.711 ; gain = 6.023
+disconnect_bd_net /rst_ps7_0_100M_peripheral_aresetn [get_bd_pins v_rgb2ycrcb_0/aresetn]
+undo
+INFO: [Common 17-17] undo 'disconnect_bd_net /rst_ps7_0_100M_peripheral_aresetn [get_bd_pins v_rgb2ycrcb_0/aresetn]'
+disconnect_bd_net /rst_ps7_0_100M_peripheral_aresetn [get_bd_pins v_rgb2ycrcb_0/aresetn]
+connect_bd_net [get_bd_pins v_rgb2ycrcb_0/aresetn] [get_bd_pins rst_clk_wiz_0_148M/peripheral_aresetn]
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1344] Reset pin /c_rsample_0/aresetn (associated clock /c_rsample_0/aclk) is connected to reset source /rst_ps7_0_100M/peripheral_aresetn (synchronous to clock source /processing_system7_0/FCLK_CLK0).
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_clk_wiz_0_148M/peripheral_aresetn.
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/v_rgb2ycrcb_0/s_axis_video_tvalid
+
+validate_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1742.715 ; gain = 6.535
+disconnect_bd_net /rst_ps7_0_100M_peripheral_aresetn [get_bd_pins c_rsample_0/aresetn]
+connect_bd_net [get_bd_pins c_rsample_0/aresetn] [get_bd_pins rst_clk_wiz_0_148M/peripheral_aresetn]
+save_bd_design
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/v_rgb2ycrcb_0/s_axis_video_tvalid
+
+validate_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1769.836 ; gain = 3.340
+update_compile_order -fileset sources_1
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins v_rgb2ycrcb_0/video_in]
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+validate_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1780.023 ; gain = 9.562
+save_bd_design
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+regenerate_bd_layout
+group_bd_cells videoSubSystem [get_bd_cells zed_hdmi_out_0] [get_bd_cells axi_vdma_0] [get_bd_cells xlconstant_0] [get_bd_cells xlconstant_1] [get_bd_cells rst_clk_wiz_0_148M] [get_bd_cells v_axi4s_vid_out_0] [get_bd_cells c_rsample_0] [get_bd_cells v_rgb2ycrcb_0] [get_bd_cells v_tc_0] [get_bd_cells axi_iic_0] [get_bd_cells ps7_0_axi_periph]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /videoSubSystem/clk(clk) and /videoSubSystem/zed_hdmi_out_0/clk(undef)
+group_bd_cells imageProcess [get_bd_cells SketchIP_1080p_0] [get_bd_cells axis_dwidth_converter_0] [get_bd_cells axi_dma_0]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /imageProcess/axi_resetn(rst) and /imageProcess/SketchIP_1080p_0/axi_reset_n(undef)
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+make_wrapper -files [get_files D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd] -top
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /imageProcess/axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /imageProcess/axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd> 
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hdl/system_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1830.840 ; gain = 43.691
+open_bd_design {D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd}
+reset_run synth_1
+reset_run system_v_axi4s_vid_out_0_0_synth_1
+reset_run system_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block imageProcess/axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block imageProcess/axis_dwidth_converter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0.hwh
+Generated Block Design Tcl file d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0_bd.tcl
+Generated Hardware Definition File d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/synth/system_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/rst_clk_wiz_0_148M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block imageProcess/SketchIP_1080p_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/zed_hdmi_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/v_rgb2ycrcb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/c_rsample_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/axi_iic_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/ps7_0_axi_periph/m02_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/ps7_0_axi_periph/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/synth/system.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_cc_1, cache-ID = 497bced554c09a48; cache size = 110.416 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_cc_0, cache-ID = 497bced554c09a48; cache size = 110.416 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = b483ac5f30e466e2; cache size = 110.416 MB.
+[Sat Sep 25 19:00:59 2021] Launched system_v_axi4s_vid_out_0_0_synth_1, system_xbar_0_synth_1, system_c_rsample_0_0_synth_1, system_zed_hdmi_out_0_0_synth_1, system_xlconstant_1_0_synth_1, system_v_rgb2ycrcb_0_0_synth_1, system_axi_iic_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_v_axi4s_vid_out_0_0_synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_v_axi4s_vid_out_0_0_synth_1/runme.log
+system_xbar_0_synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_xbar_0_synth_1/runme.log
+system_c_rsample_0_0_synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_c_rsample_0_0_synth_1/runme.log
+system_zed_hdmi_out_0_0_synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_zed_hdmi_out_0_0_synth_1/runme.log
+system_xlconstant_1_0_synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_xlconstant_1_0_synth_1/runme.log
+system_v_rgb2ycrcb_0_0_synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_v_rgb2ycrcb_0_0_synth_1/runme.log
+system_axi_iic_0_0_synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_axi_iic_0_0_synth_1/runme.log
+synth_1: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/synth_1/runme.log
+[Sat Sep 25 19:00:59 2021] Launched impl_1...
+Run output will be captured here: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1988.730 ; gain = 157.336
+file copy -force D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/impl_1/system_wrapper.sysdef D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk -hwspec D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk -hwspec D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/impl_1/system_wrapper.sysdef D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk -hwspec D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk -hwspec D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Sep 25 19:32:35 2021] Launched impl_1...
+Run output will be captured here: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/impl_1/runme.log
+make_wrapper -files [get_files D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd] -top
+file copy -force D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/impl_1/system_wrapper.sysdef D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk -hwspec D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk -hwspec D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout -routing'
+regenerate_bd_layout
+save_bd_design
+validate_bd_design -force
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /imageProcess/axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-9] /imageProcess/axi_dma_0
+                   ########################################################### 
+                   Interface connected to S_AXIS_S2MM does not have TLAST port
+                   ###########################################################
+validate_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2597.746 ; gain = 12.309
+regenerate_bd_layout
+make_wrapper -files [get_files D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd] -top
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/system.bd> 
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hdl/system_wrapper.v
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block imageProcess/axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block imageProcess/axis_dwidth_converter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0.hwh
+Generated Block Design Tcl file d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hw_handoff/system_axi_smc_0_bd.tcl
+Generated Hardware Definition File d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/synth/system_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/rst_clk_wiz_0_148M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block imageProcess/SketchIP_1080p_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/zed_hdmi_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/v_rgb2ycrcb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/c_rsample_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/axi_iic_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/ps7_0_axi_periph/m02_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/ps7_0_axi_periph/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block videoSubSystem/ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/synth/system.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_cc_1, cache-ID = 497bced554c09a48; cache size = 114.124 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_cc_0, cache-ID = 497bced554c09a48; cache size = 114.124 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = b483ac5f30e466e2; cache size = 114.124 MB.
+[Sat Sep 25 19:50:31 2021] Launched synth_1...
+Run output will be captured here: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/synth_1/runme.log
+[Sat Sep 25 19:50:31 2021] Launched impl_1...
+Run output will be captured here: D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2801.977 ; gain = 157.824
+file copy -force D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/impl_1/system_wrapper.sysdef D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+
+launch_sdk -workspace D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk -hwspec D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk -hwspec D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 25 20:24:27 2021...

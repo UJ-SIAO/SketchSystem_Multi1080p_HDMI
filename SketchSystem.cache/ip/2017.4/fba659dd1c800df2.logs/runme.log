@@ -1,0 +1,769 @@
+
+*** Running vivado
+    with args -log system_v_rgb2ycrcb_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_v_rgb2ycrcb_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_v_rgb2ycrcb_0_0.tcl -notrace
+Command: synth_design -top system_v_rgb2ycrcb_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13864 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 404.758 ; gain = 102.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_v_rgb2ycrcb_0_0' [d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_v_rgb2ycrcb_0_0/synth/system_v_rgb2ycrcb_0_0.vhd:77]
+	Parameter C_S_AXIS_VIDEO_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_VIDEO_FORMAT bound to: 2 - type: integer 
+	Parameter C_S_AXIS_VIDEO_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_VIDEO_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_AXIS_VIDEO_FORMAT bound to: 1 - type: integer 
+	Parameter C_M_AXIS_VIDEO_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter c_s_axi_addr_width bound to: 9 - type: integer 
+	Parameter c_s_axi_data_width bound to: 32 - type: integer 
+	Parameter C_HAS_AXI4_LITE bound to: 0 - type: integer 
+	Parameter C_HAS_DEBUG bound to: 0 - type: integer 
+	Parameter C_HAS_INTC_IF bound to: 0 - type: integer 
+	Parameter C_MAX_COLS bound to: 1920 - type: integer 
+	Parameter C_ACTIVE_COLS bound to: 1920 - type: integer 
+	Parameter C_ACTIVE_ROWS bound to: 1080 - type: integer 
+	Parameter C_HAS_CLIP bound to: 1 - type: integer 
+	Parameter C_HAS_CLAMP bound to: 1 - type: integer 
+	Parameter C_ACOEF bound to: 19595 - type: integer 
+	Parameter C_BCOEF bound to: 7471 - type: integer 
+	Parameter C_CCOEF bound to: 46727 - type: integer 
+	Parameter C_DCOEF bound to: 36962 - type: integer 
+	Parameter C_YOFFSET bound to: 16 - type: integer 
+	Parameter C_CBOFFSET bound to: 128 - type: integer 
+	Parameter C_CROFFSET bound to: 128 - type: integer 
+	Parameter C_YMAX bound to: 240 - type: integer 
+	Parameter C_YMIN bound to: 16 - type: integer 
+	Parameter C_CBMAX bound to: 240 - type: integer 
+	Parameter C_CBMIN bound to: 16 - type: integer 
+	Parameter C_CRMAX bound to: 240 - type: integer 
+	Parameter C_CRMIN bound to: 16 - type: integer 
+	Parameter C_S_AXI_CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-3491] module 'v_rgb2ycrcb' declared at 'd:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ipshared/8a5f/hdl/v_rgb2ycrcb_v7_1_vh_rfs.vhd:6310' bound to instance 'U0' of component 'v_rgb2ycrcb' [d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_v_rgb2ycrcb_0_0/synth/system_v_rgb2ycrcb_0_0.vhd:180]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'system_v_rgb2ycrcb_0_0' (21#1) [d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_v_rgb2ycrcb_0_0/synth/system_v_rgb2ycrcb_0_0.vhd:77]
+WARNING: [Synth 8-3331] design get_round_addend__parameterized1 has unconnected port msb
+WARNING: [Synth 8-3331] design get_round_addend__parameterized0 has unconnected port msb
+WARNING: [Synth 8-3331] design get_round_addend has unconnected port msb
+WARNING: [Synth 8-3331] design delay__parameterized1 has unconnected port q1
+WARNING: [Synth 8-3331] design delay__parameterized1 has unconnected port d1
+WARNING: [Synth 8-3331] design delay__parameterized0 has unconnected port q1
+WARNING: [Synth 8-3331] design delay__parameterized0 has unconnected port d1
+WARNING: [Synth 8-3331] design delay has unconnected port q1
+WARNING: [Synth 8-3331] design delay has unconnected port d1
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymax[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymax[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymax[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymax[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymax[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymax[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymax[9]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymax[8]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymin[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymin[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymin[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymin[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymin[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymin[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymin[9]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port ymin[8]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmax[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmax[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmax[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmax[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmax[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmax[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmax[9]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmax[8]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmin[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmin[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmin[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmin[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmin[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmin[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmin[9]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cbmin[8]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmax[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmax[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmax[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmax[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmax[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmax[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmax[9]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmax[8]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmin[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmin[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmin[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmin[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmin[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmin[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmin[9]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port crmin[8]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port yoffset[16]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port yoffset[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port yoffset[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port yoffset[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port yoffset[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port yoffset[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port yoffset[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port yoffset[9]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cboffset[16]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cboffset[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cboffset[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cboffset[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cboffset[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cboffset[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cboffset[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port cboffset[9]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port croffset[16]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port croffset[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port croffset[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port croffset[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port croffset[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port croffset[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port croffset[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_core has unconnected port croffset[9]
+WARNING: [Synth 8-3331] design axi4s_control has unconnected port test_pattern
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[15]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[14]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[13]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[12]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[11]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[10]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[9]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[8]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[7]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[6]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[5]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port status[4]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port control[31]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port control[30]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port control[29]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port control[28]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port control[27]
+WARNING: [Synth 8-3331] design rgb2ycrcb_top has unconnected port control[26]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 463.000 ; gain = 160.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 463.000 ; gain = 160.633
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_v_rgb2ycrcb_0_0/system_v_rgb2ycrcb_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_v_rgb2ycrcb_0_0/system_v_rgb2ycrcb_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_v_rgb2ycrcb_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_v_rgb2ycrcb_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_v_rgb2ycrcb_0_0/system_v_rgb2ycrcb_0_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.srcs/sources_1/bd/system/ip/system_v_rgb2ycrcb_0_0/system_v_rgb2ycrcb_0_0_clocks.xdc] for cell 'U0'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 826.844 ; gain = 0.238
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 826.844 ; gain = 524.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 826.844 ; gain = 524.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_v_rgb2ycrcb_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 826.844 ; gain = 524.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 826.844 ; gain = 524.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 4     
+	   4 Input     11 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   4 Input      9 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 5     
+	   3 Input      5 Bit       Adders := 3     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               26 Bit    Registers := 6     
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 3     
+	               13 Bit    Registers := 5     
+	               11 Bit    Registers := 7     
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 14    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 4     
+	   9 Input     13 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module video_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dp_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               26 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 2     
+Module synch_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module axis_input_buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axi4s_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 4     
++---Registers : 
+	               13 Bit    Registers := 5     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   9 Input     13 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module delay_sclr 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module radd_sub_sclr_no 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 1     
+Module delay_sclr__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               26 Bit    Registers := 2     
+Module delay 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
+Module delay_sclr__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module radd_sub_sclr_no__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
+Module delay__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 5     
+Module delay_sclr__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+Module radd_sub_sclr_no__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     11 Bit       Adders := 1     
+Module delay__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 3     
+Module mac 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module mac__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module radd_sub_sclr_no__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
+Module max_sat 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module min_sat 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module synch_fifo_fallthru 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 4     
+	   3 Input      5 Bit       Adders := 3     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module rgb2ycrcb_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP plusOp, operation Mode is: (A2*B2)'.
+DSP Report: register ar_reg is absorbed into DSP plusOp.
+DSP Report: register br_reg is absorbed into DSP plusOp.
+DSP Report: register pr_reg is absorbed into DSP plusOp.
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP mac_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register mac_reg is absorbed into DSP mac_reg.
+DSP Report: operator plusOp is absorbed into DSP mac_reg.
+DSP Report: Generating DSP mac_reg, operation Mode is: (C+(A2*B2)'+CarryIn)'.
+DSP Report: register ar_reg is absorbed into DSP mac_reg.
+DSP Report: register br_reg is absorbed into DSP mac_reg.
+DSP Report: register mac_reg is absorbed into DSP mac_reg.
+DSP Report: register pr_reg is absorbed into DSP mac_reg.
+DSP Report: operator plusOp is absorbed into DSP mac_reg.
+DSP Report: operator multOp is absorbed into DSP mac_reg.
+DSP Report: Generating DSP mac_reg, operation Mode is: (C+(A2*B2)'+CarryIn)'.
+DSP Report: register ar_reg is absorbed into DSP mac_reg.
+DSP Report: register br_reg is absorbed into DSP mac_reg.
+DSP Report: register mac_reg is absorbed into DSP mac_reg.
+DSP Report: register pr_reg is absorbed into DSP mac_reg.
+DSP Report: operator plusOp is absorbed into DSP mac_reg.
+DSP Report: operator multOp is absorbed into DSP mac_reg.
+DSP Report: Generating DSP rgb2ycrcb_top_inst/intcore/mult_aRG/reg/needs_delay.shift_register_reg[2], operation Mode is: (A*B)'.
+DSP Report: register rgb2ycrcb_top_inst/intcore/mult_aRG/reg/needs_delay.shift_register_reg[2] is absorbed into DSP rgb2ycrcb_top_inst/intcore/mult_aRG/reg/needs_delay.shift_register_reg[2].
+DSP Report: register rgb2ycrcb_top_inst/intcore/mult_aRG/reg/needs_delay.shift_register_reg[1] is absorbed into DSP rgb2ycrcb_top_inst/intcore/mult_aRG/reg/needs_delay.shift_register_reg[2].
+DSP Report: operator rgb2ycrcb_top_inst/intcore/mult_aRG/multOp is absorbed into DSP rgb2ycrcb_top_inst/intcore/mult_aRG/reg/needs_delay.shift_register_reg[2].
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[12]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[11]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[10]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[9]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[8]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[7]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[6]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[5]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[4]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[3]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[2]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[1]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_cols_1_reg[0]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_video_i_reg) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/axi_control/active_delay_i_reg) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/intcore/clamp.min_Y/reg/needs_delay.shift_register_reg[1][9]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/intcore/clamp.min_Y/reg/needs_delay.shift_register_reg[1][8]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/intcore/clamp.min_Cb/reg/needs_delay.shift_register_reg[1][9]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/intcore/clamp.min_Cb/reg/needs_delay.shift_register_reg[1][8]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/intcore/clamp.min_Cr/reg/needs_delay.shift_register_reg[1][9]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3332] Sequential element (rgb2ycrcb_top_inst/intcore/clamp.min_Cr/reg/needs_delay.shift_register_reg[1][8]) is unused and will be removed from module v_rgb2ycrcb.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/U_VIDEO_CTRL/\GEN_HAS_IRQ.irq_reg )
+INFO: [Synth 8-3332] Sequential element (GEN_HAS_IRQ.irq_reg) is unused and will be removed from module video_ctrl.
+INFO: [Synth 8-3332] Sequential element (br_reg[16]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[15]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[14]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[13]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[12]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[11]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[10]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[9]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[8]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[7]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[6]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[5]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[4]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[3]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[2]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[1]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[0]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (ar_reg[8]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (ar_reg[7]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (ar_reg[6]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (ar_reg[5]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (ar_reg[4]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (ar_reg[3]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (ar_reg[2]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (ar_reg[1]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (ar_reg[0]) is unused and will be removed from module mac.
+INFO: [Synth 8-3332] Sequential element (br_reg[16]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[15]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[14]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[13]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[12]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[11]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[10]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[9]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[8]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[7]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[6]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[5]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[4]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[3]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[2]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[1]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (br_reg[0]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[10]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[9]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[8]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[7]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[6]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[5]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[4]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[3]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[2]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[1]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (ar_reg[0]) is unused and will be removed from module mac__parameterized0.
+INFO: [Synth 8-3332] Sequential element (r_cy_in_reg) is unused and will be removed from module mac__parameterized0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 826.844 ; gain = 524.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                                                               | Inference      | Size (Depth x Width) | Primitives   | 
++------------+------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|U0          | rgb2ycrcb_top_inst/axi_in_fifo/U_AXIS_SYNC_FIFO/mem1/GenerateDoutWriteFirstA.mem_reg     | User Attribute | 16 x 26              | RAM32M x 5   | 
+|U0          | rgb2ycrcb_top_inst/axi_out_fifo/UOSD_AXIS_SYNC_FIFO/mem1/GenerateDoutWriteFirstA.mem_reg | User Attribute | 16 x 26              | RAM32M x 5   | 
++------------+------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mac         | (A2*B2)'              | 17     | 9      | -      | -      | 26     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|mac         | (PCIN+A:B)'           | 8      | 18     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (C+(A2*B2)'+CarryIn)' | 17     | 11     | 28     | -      | 28     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|mac         | (C+(A2*B2)'+CarryIn)' | 17     | 11     | 28     | -      | 28     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|v_rgb2ycrcb | (A*B)'                | 17     | 9      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 1    | 1    | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 871.066 ; gain = 568.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 903.336 ; gain = 600.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                                                               | Inference      | Size (Depth x Width) | Primitives   | 
++------------+------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|U0          | rgb2ycrcb_top_inst/axi_in_fifo/U_AXIS_SYNC_FIFO/mem1/GenerateDoutWriteFirstA.mem_reg     | User Attribute | 16 x 26              | RAM32M x 5   | 
+|U0          | rgb2ycrcb_top_inst/axi_out_fifo/UOSD_AXIS_SYNC_FIFO/mem1/GenerateDoutWriteFirstA.mem_reg | User Attribute | 16 x 26              | RAM32M x 5   | 
++------------+------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 913.312 ; gain = 610.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 913.312 ; gain = 610.945
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 913.312 ; gain = 610.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 913.312 ; gain = 610.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 913.312 ; gain = 610.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 913.312 ; gain = 610.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 913.312 ; gain = 610.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|v_rgb2ycrcb | rgb2ycrcb_top_inst/intcore/del_Y/needs_delay.shift_register_reg[3][9] | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|v_rgb2ycrcb | rgb2ycrcb_top_inst/intcore/del_G/needs_delay.shift_register_reg[4][7] | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|v_rgb2ycrcb | rgb2ycrcb_top_inst/intcore/del_B/needs_delay.shift_register_reg[5][7] | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|v_rgb2ycrcb | rgb2ycrcb_top_inst/intcore/del_R/needs_delay.shift_register_reg[5][7] | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++------------+-----------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    72|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_2 |     2|
+|5     |DSP48E1_3 |     1|
+|6     |LUT1      |    34|
+|7     |LUT2      |   135|
+|8     |LUT3      |    55|
+|9     |LUT4      |   146|
+|10    |LUT5      |    28|
+|11    |LUT6      |    58|
+|12    |RAM32M    |    10|
+|13    |SRL16E    |    34|
+|14    |FDRE      |   326|
+|15    |FDSE      |     9|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------------------+-----------------------------------+------+
+|      |Instance                        |Module                             |Cells |
++------+--------------------------------+-----------------------------------+------+
+|1     |top                             |                                   |   912|
+|2     |  U0                            |v_rgb2ycrcb                        |   912|
+|3     |    U_VIDEO_CTRL                |video_ctrl                         |     9|
+|4     |    rgb2ycrcb_top_inst          |rgb2ycrcb_top                      |   903|
+|5     |      axi_control               |axi4s_control                      |   352|
+|6     |      axi_in_fifo               |axis_input_buffer                  |    73|
+|7     |        U_AXIS_SYNC_FIFO        |synch_fifo                         |    72|
+|8     |          mem1                  |dp_ram_18                          |    39|
+|9     |      axi_out_fifo              |axis_output_buffer                 |    68|
+|10    |        UOSD_AXIS_SYNC_FIFO     |synch_fifo_fallthru                |    68|
+|11    |          mem1                  |dp_ram                             |    36|
+|12    |      intcore                   |rgb2ycrcb_core                     |   386|
+|13    |        \v4_mac1.mult_aCr       |mac                                |     2|
+|14    |        \v4_mac23.mac_cBY       |mac__parameterized0__1             |     1|
+|15    |        \v4_mac23.mac_cRY       |mac__parameterized0                |     1|
+|16    |        add_aRG_bBG_G           |radd_sub_sclr__parameterized0      |    30|
+|17    |          \use_fabric.adder     |radd_sub_sclr_no__parameterized0   |    30|
+|18    |            \reg                |delay_sclr__parameterized1_17      |    17|
+|19    |        \clamp.min_Cb           |min_sat                            |    18|
+|20    |          \reg                  |delay_sclr__parameterized1_16      |     8|
+|21    |        \clamp.min_Cr           |min_sat_0                          |    18|
+|22    |          \reg                  |delay_sclr__parameterized1_15      |     8|
+|23    |        \clamp.min_Y            |min_sat_1                          |    18|
+|24    |          \reg                  |delay_sclr__parameterized1_14      |     8|
+|25    |        \clip.max_Cb            |max_sat                            |    41|
+|26    |          \reg                  |delay_sclr__parameterized1_13      |    29|
+|27    |        \clip.max_Cr            |max_sat_2                          |    41|
+|28    |          \reg                  |delay_sclr__parameterized1_12      |    29|
+|29    |        \clip.max_Y             |max_sat_3                          |    31|
+|30    |          \reg                  |delay_sclr__parameterized1         |    19|
+|31    |        del_B                   |delay__parameterized0              |    26|
+|32    |        del_G                   |delay                              |    16|
+|33    |        del_R                   |delay__parameterized0_4            |    26|
+|34    |        del_Y                   |delay__parameterized1              |    30|
+|35    |        mult_aRG                |mult                               |     1|
+|36    |          \reg                  |delay_sclr__parameterized0         |     1|
+|37    |        sub_BG                  |radd_sub_sclr                      |    20|
+|38    |          \use_fabric.adder     |radd_sub_sclr_no_10                |    20|
+|39    |            \reg                |delay_sclr_11                      |    20|
+|40    |        sub_BY                  |radd_sub_sclr__parameterized1      |    11|
+|41    |          \use_fabric.adder     |radd_sub_sclr_no__parameterized1_8 |    11|
+|42    |            \reg                |delay_sclr__parameterized2_9       |    11|
+|43    |        sub_RG                  |radd_sub_sclr_5                    |    21|
+|44    |          \use_fabric.adder     |radd_sub_sclr_no                   |    21|
+|45    |            \reg                |delay_sclr                         |    21|
+|46    |        sub_RY                  |radd_sub_sclr__parameterized1_6    |    12|
+|47    |          \use_fabric.adder     |radd_sub_sclr_no__parameterized1   |    12|
+|48    |            \reg                |delay_sclr__parameterized2_7       |    12|
+|49    |        \y_needs_round.round_Y  |round                              |    22|
+|50    |          adder                 |radd_sub_sclr__parameterized2      |    22|
+|51    |            \use_fabric.adder   |radd_sub_sclr_no__parameterized2   |    22|
+|52    |              \reg              |delay_sclr__parameterized2         |    11|
++------+--------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 913.312 ; gain = 610.945
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 840 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 913.312 ; gain = 247.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 913.312 ; gain = 610.945
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+93 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 913.312 ; gain = 622.477
+INFO: [Common 17-1381] The checkpoint 'D:/Project/SketchSystem_Multi1080p_HDMI/SketchSystem.runs/system_v_rgb2ycrcb_0_0_synth_1/system_v_rgb2ycrcb_0_0.dcp' has been generated.
